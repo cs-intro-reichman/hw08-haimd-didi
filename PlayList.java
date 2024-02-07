@@ -105,6 +105,7 @@ public class PlayList {
         if(i<0||i>size||size==maxSize) return false;
         if(i==size){
             tracks[i] = track;
+            size++;
             return true;
         }
         for(int j=size-1;j>=i;j--){
