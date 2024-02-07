@@ -1,11 +1,16 @@
 // Tests the PlayList and Track classes.
-class RuniFi {
+
+import java.util.Arrays;
+
+public class RuniFi {
     
     public static void main(String[] args) {
         // Creates a play list with a maximum capacity of 10 tracks
         // (small maximum capacity is good for testing purposes)
+
         PlayList myList = new PlayList(10);
-    
+        // System.out.println(myList[1]);
+        // display("mylist", myList);
         // Creates some tracks
         Track track1 = new Track("Fernando", "ABBA", 354);
         Track track2 = new Track("Imagine", "John Lennon", 187);
