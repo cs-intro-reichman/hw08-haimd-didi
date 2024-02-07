@@ -127,9 +127,9 @@ public class PlayList {
                 tracks[j-1] = tracks[j];
             }
         
+            tracks[size-1] = new Track(null, null, 0);
+            size--;
         }
-        tracks[size-1] = new Track(null, null, 0);
-        size--;
     }
 
     /** Removes the first track that has the given title from this list.
