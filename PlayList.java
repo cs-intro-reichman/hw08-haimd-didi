@@ -64,7 +64,7 @@ public class PlayList {
      public void removeLast() {
 
         if(size>0){
-            tracks[size] = new Track(null, null, 0);
+            tracks[size-1] = new Track(null, null, 0);
             size--;
         }
     }
@@ -122,7 +122,7 @@ public class PlayList {
      *  does nothing and returns -1. */
     public void remove(int i) {
 
-        if(size!=0&&i>0&&i<size){
+        if(size!=0&&i>=0&&i<size){
             for(int j=i+1;j<size;j++){
                 tracks[j-1] = tracks[j];
             }
