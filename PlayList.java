@@ -53,7 +53,7 @@ public class PlayList {
             str+= track.getArtist()+",";
             str+= " " + track.getTitle()+",";
             str+= " " + track.getDuration();
-            str+= "/n";
+            str+= "\n";
         }
         }
 
@@ -64,7 +64,7 @@ public class PlayList {
      public void removeLast() {
 
         if(size>0){
-            tracks[size-1] = new Track(null, null, 0);
+            tracks[size-1] = null;
             size--;
         }
     }
@@ -77,7 +77,6 @@ public class PlayList {
             totalDuration += track.getDuration();
         }
         }
-        //// replace the following statement with your code
         return totalDuration;
     }
 
@@ -127,7 +126,7 @@ public class PlayList {
                 tracks[j-1] = tracks[j];
             }
         
-            tracks[size-1] = new Track(null, null, 0);
+            tracks[size-1] = null;
             size--;
         }
     }
